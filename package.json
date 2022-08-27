@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "lint": "eslint --cache \"src/**/*.{js,jsx,ts,tsx}\"",
-    "lint:fix": "eslint --cache --fix \"src/**/*.{js,jsx,ts,tsx}\""
+    "lint": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "eslint --cache --fix --cache-location ./node_modules/.cache/.eslintcache \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "repository": {
     "type": "git",

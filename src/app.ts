@@ -1,7 +1,7 @@
-const pizzas = [{ name: 'Pepperoni', toppings: ['pepperoni'] }];
-
 // ---> ARROW FUNCTIONS AND IMPLICIT RETURN <---
 {
+  const pizzas = [{ name: 'Pepperoni', toppings: ['pepperoni'] }];
+
   const mappedPizzas = pizzas.map(pizza => pizza.name.toUpperCase());
 
   console.log(mappedPizzas);
@@ -64,4 +64,18 @@ const pizzas = [{ name: 'Pepperoni', toppings: ['pepperoni'] }];
   const allToppings = [...toppings, ...newToppings];
 
   console.log(allToppings);
+}
+
+{
+  const pizza = { name: 'Pepperoni', price: 15 };
+
+  const toppings = ['pepperoni'];
+
+  // old way using Object.assign
+  const order = Object.assign({}, pizza, { toppings });
+
+  // new way using spread operator
+  const spreadOrder = { ...pizza, toppings };
+
+  console.log(order, spreadOrder);
 }
