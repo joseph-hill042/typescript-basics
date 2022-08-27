@@ -79,3 +79,31 @@
 
   console.log(order, spreadOrder);
 }
+
+// ---> DESTRUCTURING <---
+{
+  const pizza = { name: 'Pepperoni', toppings: ['pepperoni'] };
+
+  const order = ({ name: pizzaName, toppings: pizzaToppings }: { name: string; toppings: string[] }) => {
+    return {
+      pizzaName,
+      pizzaToppings,
+    };
+  };
+
+  const { pizzaName } = order(pizza);
+
+  console.log(pizzaName);
+
+  const toppings = ['pepperoni', 'chilli', 'bacon'];
+
+  const [first, second, third] = toppings;
+
+  console.log(first, second, third);
+
+  const logToppings = ([first, second, third]: string[]) => {
+    console.log(first, second, third);
+  };
+
+  logToppings(toppings);
+}
