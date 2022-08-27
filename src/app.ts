@@ -12,3 +12,10 @@ const pizza = {
 };
 
 console.log(pizza.getName());
+
+function multiply(x: number, y = 25) {
+  return x * y;
+}
+
+console.log(multiply(5));
+console.log(multiply(5, 10));
