@@ -54,3 +54,14 @@ const pizzas = [{ name: 'Pepperoni', toppings: ['pepperoni'] }];
 
   console.log(sum(1, 2, 3, 4, 5));
 }
+
+// ---> SPREAD OPERATOR <---
+{
+  const toppings = ['bacon', 'chilli'];
+
+  const newToppings = ['pepperoni'];
+
+  const allToppings = [...toppings, ...newToppings];
+
+  console.log(allToppings);
+}
