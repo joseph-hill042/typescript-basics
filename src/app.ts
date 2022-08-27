@@ -45,3 +45,12 @@ const pizzas = [{ name: 'Pepperoni', toppings: ['pepperoni'] }];
 
   console.log(createOrder(pizza, toppings));
 }
+
+// ---> REST PARAMETERS <---
+{
+  const sum = (...numbers: number[]) => {
+    return numbers.reduce((a, b) => a + b);
+  };
+
+  console.log(sum(1, 2, 3, 4, 5));
+}
