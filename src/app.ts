@@ -157,3 +157,10 @@
   coupon = 'pizza25';
   coupon = true;
 }
+
+// ---> IMPLICIT VS EXPLICIT TYPES <---
+{
+  const implicitCoupon = 'pizza25';
+  // eslint-disable-next-line @typescript-eslint/no-inferrable-types
+  const explicitCoupon: string = 'pizza25';
+}
