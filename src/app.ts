@@ -134,3 +134,17 @@
 
   console.log(couponMessage);
 }
+
+// ---> BOOLEAN TYPE, BOOLEAN LITERALS <---
+{
+  const pizzas = 5;
+  const offerDiscount = (orders: number): boolean => {
+    return orders >= 3;
+  };
+
+  if (offerDiscount(pizzas)) {
+    console.log('Enjoy 25% discount');
+  } else {
+    console.log('Order more than 3 pizzas to get 25% discount');
+  }
+}
