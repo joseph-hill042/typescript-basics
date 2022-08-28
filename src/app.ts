@@ -148,3 +148,12 @@
     console.log('Order more than 3 pizzas to get 25% discount');
   }
 }
+
+// ---> THE ANY TYPE <---
+{
+  let coupon;
+
+  coupon = 25;
+  coupon = 'pizza25';
+  coupon = true;
+}
