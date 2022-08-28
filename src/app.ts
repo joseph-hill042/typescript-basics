@@ -107,3 +107,17 @@
 
   logToppings(toppings);
 }
+
+// ---> NUMBER TYPES, ARGUMENTS AND FUNCTIONS <---
+{
+  const pizzaCost = 10;
+  const pizzaToppings = 2;
+
+  const calculatePrice = (cost: number, toppings: number): number => {
+    return cost + 1.5 * toppings;
+  };
+
+  const price: number = calculatePrice(pizzaCost, pizzaToppings);
+
+  console.log(`Pizza costs: $${price}`);
+}
