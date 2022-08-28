@@ -121,3 +121,16 @@
 
   console.log(`Pizza costs: $${price}`);
 }
+
+// ---> STRING TYPES, STRING LITERALS <---
+{
+  const coupon = 'pizza25';
+
+  const normalizeCoupon = (code: string): string => {
+    return code.toUpperCase();
+  };
+
+  const couponMessage = `Final coupon is ${normalizeCoupon(coupon)}`;
+
+  console.log(couponMessage);
+}
